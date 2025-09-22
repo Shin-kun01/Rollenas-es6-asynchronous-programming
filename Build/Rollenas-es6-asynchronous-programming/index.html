@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ES6 Advanced JavaScript Concepts - Classes, Promises, Async/Await, and Fetch API with student and instructor data">
+    <title>ES6 Advanced JavaScript Concepts - Student Management System</title>
+    
+    <meta property="og:title" content="ES6 Advanced JavaScript Concepts - Student Management System">
+    <meta property="og:description" content="ES6 Classes, Asynchronous JavaScript (Promises, Async/Await), and Fetch API with real JSON data">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+  
+        <header class="header">
+            <h1>ES6 & Asynchronous Programming</h1>
+            <p>ES6 Classes, Asynchronous JavaScript (Promises, Async/Await), and Fetch API with real JSON data</p>
+        </header>
+
+        <nav class="navigation">
+            <button onclick="scrollToSection('part1')">Part 1: ES6 Classes</button>
+            <button onclick="scrollToSection('part2')">Part 2: Async JavaScript</button>
+            <button onclick="scrollToSection('part3')">Part 3: Fetch & Display</button>
+            <button onclick="scrollToSection('part4')">Part 4: Data Relationships</button>
+        </nav>
+
+        <section id="part1" class="section">
+            <div class="card">
+                <h2><span class="number">1</span>ES6 Classes - Student & Instructor</h2>
+                
+                <div class="grid">
+                    <div class="box">
+                        <h3>Student Class</h3>
+                        <div id="student">Loading student class...</div>
+                    </div>
+                    
+                    <div class="box">
+                        <h3>Instructor Class</h3>
+                        <div id="instructor">Loading instructor class...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="part2" class="section">
+            <div class="card">
+                <h2><span class="number">2</span>Asynchronous JavaScript - Promises & Async/Await</h2>
+                
+                <div class="grid">
+                    <div class="async">
+                        <button onclick="fetchWithPromises()" id="promises-btn">Fetch with Promises (.then)</button>
+                        <div class="result-box">
+                            <h4>Promise Result:</h4>
+                            <div id="promise-result">Click button to fetch data...</div>
+                        </div>
+                    </div>
+                    
+                    <div class="async">
+                        <button onclick="fetchWithAsyncAwait()" id="async-btn">Fetch with Async/Await</button>
+                        <div class="result-box">
+                            <h4>Async/Await Result:</h4>
+                            <div id="async-result">Click button to fetch data...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="part3" class="section">
+            <div class="card">
+                <h2><span class="number">3</span>Fetch API & Display Data</h2>
+                
+                <button onclick="loadAndDisplayData()" id="load-data-btn">Load & Display All Data</button>
+                
+                <div id="output" class="output-grid">
+                    <div class="output-message">Click "Load & Display All Data" to see the results</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="part4" class="section">
+            <div class="card">
+                <h2><span class="number">4</span>Data Relationships - Students, Courses & Instructors</h2>
+                
+                <button onclick="showDataRelationships()" id="relationships-btn">Show Data Relationships</button>
+                
+                <div id="relationships-output">
+                    <div class="output-message">Click "Show Data Relationships" to see the connections</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
